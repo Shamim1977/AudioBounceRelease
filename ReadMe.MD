@@ -6,59 +6,6 @@
 
 
 
-### Dependencies - Windows
-
-```
-Sox: Download latest, extract and put in system environment variables:
-https://sourceforge.net/projects/sox/files/sox/
-
-espeak-ng: Download to install
-https://github.com/Shamim1977/Binaries/releases/download/v1.0.0/espeak-ng.msi
-
-ffmpeg & ffprobe: Download. Rename to ffmpeg and ffprobe respectively. Add the directory path to environment variables.
-https://github.com/Shamim1977/Binaries/releases/download/v1.0.0/ffmpeg_win32.exe
-https://github.com/Shamim1977/Binaries/releases/download/v1.0.0/ffprobe_win32.exe
-```
-
-### Dependencies - Linux
-
-```
-sudo update
-sudo apt install sox libsox-fmt-mp3 espeak-ng portaudio19-dev
-
-ffmpeg & ffprobe: Download to install
-https://github.com/Shamim1977/Binaries/releases/download/v1.0.0/ffmpeg_linux
-https://github.com/Shamim1977/Binaries/releases/download/v1.0.0/ffprobe_linux
-
-
-sudo mv /download/path/to/ffmpeg_linux /usr/local/bin/ffmpeg
-sudo mv /download/path/to/ffprobe_linux /usr/local/bin/ffprobe
-sudo chmod +x /usr/local/bin/ffmpeg
-sudo chmod +x /usr/local/bin/ffprobe
-```
-
-### Dependencies - MacOS
-
-```
-brew install sox espeak-ng portaudio
-
-ffmpeg & ffprobe: Download to install
-https://github.com/Shamim1977/Binaries/releases/download/v1.0.0/ffmpeg_darwin
-https://github.com/Shamim1977/Binaries/releases/download/v1.0.0/ffprobe_darwin
-On macOS 10.15 (Catalina) the binaries have to be removed from quarantine:
-
-sudo mv /download/path/to/ffmpeg_darwin /usr/local/bin/ffmpeg
-sudo mv /download/path/to/ffprobe_darwin /usr/local/bin/ffprobe
-sudo chmod +x /usr/local/bin/ffmpeg
-sudo chmod +x /usr/local/bin/ffprobe
-
-export PATH="/usr/local/bin:$PATH"
-
-xattr -dr com.apple.quarantine /usr/local/bin/ffmpeg
-xattr -dr com.apple.quarantine /usr/local/bin/ffprobe
-```
-
-
 ### Download to Install AudioBounce
 
 ```
